@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact .contact-container{
+    float: right;
+    position: absolute;
+    right: 410px;
+    top: 230px;
+    background-image: linear-gradient(45deg ,rgb(0, 217, 255), rgb(17, 101, 185));
+    background: transparent;
+    width: 33vw;
+    height: 57vh;
+    border-radius: 10px;
+    border: 2px solid aqua;
+}
+.contact h1{
+    font-family: cursive;
+    font-size: 45px;
+    position: absolute;
+    left: 40%;
+    top: 22%;
+}
+.contact h1 #me-text{
+    color: rgb(15, 126, 223);
+    font-family: cursive
+}
+.contact .contact-container input{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 35px;
+    width: 165px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: 1.4px solid white;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+.contact .contact-container input::placeholder{
+    color: white;
+}
+.contact .contact-container #message{
+    width: 89%;
+    margin-left: 4.5%;
+    margin-top: 6%;
+    height: 50%;
+    padding-left: 10px;
+    transform-origin: 0%;
+    overflow: hidden;
+    text-align: initial;
+}
+.contact .contact-container #message::placeholder{
+    position: relative;
+    bottom: 60px;
+    color: white;
+    transform-origin: 0%;
+}
+.contact button{
+    position: absolute;
+    top: 104vh;
+    left: 47%;
+    height: 40px;
+    width: 130px;
+    /* background-image: linear-gradient(60deg, rgb(7, 7, 190), rgb(0, 166, 255)); */
+    background-color: rgb(0, 179, 255);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+}

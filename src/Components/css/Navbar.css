@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Navbar{
+    height: 80px;
+}
+/* .Navbar::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 60px;
+} */
+.Navbar #my-symbol{
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-size: 33px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px outset rgb(5, 173, 234);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Navbar .links{
+    float: right;
+    margin: 20px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+.link:nth-child(1){
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.link:hover{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 22px;
+    font-family: cursive;
+    transition: .3s;
+    padding: 0 10px;
+}

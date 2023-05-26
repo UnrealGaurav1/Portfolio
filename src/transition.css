@@ -1,0 +1,66 @@
+
+
+.Home{
+    animation: homeTransition 1s;
+}
+.skills{
+    animation: skillTransition 1s;
+}
+.contact{
+    animation: contactTransition 0.75s;
+}
+.about-rightHandSide{
+    animation: about-rightside-Transition 0.5s;
+}
+.about-leftHandSide{
+    animation: about-leftside-Transition 0.5s;
+}
+
+
+
+
+
+@keyframes homeTransition{
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes skillTransition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes contactTransition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes about-rightside-Transition{
+    from{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes about-leftside-Transition{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

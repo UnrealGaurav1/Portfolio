@@ -1,0 +1,12 @@
+.container1{
+    width: 400px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.container2{
+    width: 400px;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+}

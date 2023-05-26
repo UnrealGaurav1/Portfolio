@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body::-webkit-scrollbar {
+    display: none;   
+}
+body{
+    background-color: #081b29;
+}
+
+.left-hand-side{
+    float: left;
+    display: inline;
+    margin-top: 160px;
+    margin-left: 100px;
+    width: 50vw;
+}
+.left-hand-side h1{
+    font-size: 3rem;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.left-hand-side h2{
+    font-size: 1.9rem;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: #00ccff;
+    font-weight: bolder;
+}
+.left-hand-side p{
+    width: 500px;
+    text-align: left;
+    margin-top: 20px;
+}
+.left-hand-side .buttons{
+    margin-top: 30px;
+}
+.left-hand-side .buttons button:nth-child(1){
+    color: #081b29;
+    width: 120px;
+    height: 45px;
+    background-color: #00ccff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #00ccff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+.left-hand-side .buttons button:nth-child(2){
+    margin-left: 40px;
+    width: 120px;
+    height: 47px;
+    background: transparent;
+    color: #00ccff;
+    border: 1px solid #00ccff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.left-hand-side .buttons button #hire{
+    text-decoration: none;
+}
+.left-hand-side .buttons button #talk{
+    text-decoration: none;
+}
+.right-hand-side{
+    float: right;
+}
+.right-hand-side .image-container{
+    border-radius: 100%;
+    border: 3px solid black;
+    position: relative;
+    top: 18vh;
+    right: 7vw;
+    margin-top: 0;
+    display: flex;
+    width: 370px;
+    height: 380px;
+    transition: .2s;
+    background-size: 10;
+    overflow: hidden;
+    background-color: aqua;
+}
+.right-hand-side .image-container img{
+    height: 370px;
+    width: 360px;
+    border-radius: 50%;
+    position: relative;
+    left: 3px;
+    top: 3px;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.right-hand-side .image-container::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #ec07e4, #ec07e4);
+    box-shadow: 0px 10px 55px rgba(255, 0, 238, 0.8);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.right-hand-side .image-container:hover::before{
+    inset: -20px 0px;
+}
+
+.right-hand-side .image-container::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.Footer {
+    position: absolute;
+    top: 120vh;
+    width: 100%;
+    height: 150px;   /* Height of the footer */
+    background: rgb(0, 119, 255);
+}
+.Footer .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+.Footer .icons #icon{
+    margin-left: 60px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 4px;
+}
