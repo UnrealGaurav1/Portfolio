@@ -8,11 +8,11 @@ const Navbar = () => {
     <div className="Navbar">
         <span id="my-symbol">GAURAV</span>
       <div className="links">
-        <Link to="/Portfolio/" className="link" id="home">Home</Link>
-        <Link to="/Portfolio/About" id="about" className="link">About</Link>
-        <Link to="/Portfolio/Skills" id="skills" className="link">Skills</Link>
-        <Link to="/Portfolio/Projects " id="contact" className="link">Projects</Link>
-        <Link to="/Portfolio/Contact" id="contact" className="link">Contact</Link>
+       <Link to="/" className="link" id="home">Home</Link>
+        <Link to="/About" id="about" className="link">About</Link>
+        <Link to="/Skills" id="skills" className="link">Skills</Link>
+        <Link to="/Projects " id="contact" className="link">Projects</Link>
+        <Link to="/Contact" id="contact" className="link">Contact</Link>
       </div>  
     </div>
   )
